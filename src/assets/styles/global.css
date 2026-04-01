@@ -1,0 +1,167 @@
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── CSS Variables ── */
+:root {
+  /* Colors */
+  --cream:       #F5F0E8;
+  --warm-white:  #FDFAF4;
+  --charcoal:    #1C1A17;
+  --olive:       #6B6541;
+  --gold:        #e0b96f;
+  --rust:        #9E5430;
+  --muted:       #8C8474;
+  --pink:        #fda9e8ef;
+  --border:      rgba(184,151,90,0.15);
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Jost', sans-serif;
+
+  /* Spacing */
+  --section-pad-v: clamp(64px, 10vw, 128px);
+  --section-pad-h: clamp(24px, 6vw, 96px);
+  --nav-h: 80px;
+
+  /* Transitions */
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--warm-white);
+  color: var(--charcoal);
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul { list-style: none; }
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+}
+
+/* ── Utility Classes ── */
+.section-label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--olive);
+}
+
+.section-body {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.divider {
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+  margin: 24px 0 28px;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 14px 36px;
+  transition: all 0.3s var(--ease);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--charcoal);
+  border: 1px solid var(--gold);
+}
+.btn-primary:hover {
+  background: var(--rust);
+  border-color: var(--rust);
+  color: var(--cream);
+}
+
+.btn-ghost-light {
+  background: transparent;
+  color: var(--cream);
+  border: 1px solid rgba(245,240,232,0.45);
+}
+.btn-ghost-light:hover {
+  background: rgba(245,240,232,0.08);
+  border-color: var(--cream);
+}
+
+.btn-ghost-dark {
+  background: transparent;
+  color: var(--charcoal);
+  border: 1px solid rgba(28,26,23,0.35);
+}
+.btn-ghost-dark:hover {
+  background: var(--charcoal);
+  color: var(--cream);
+}
+
+/* ── Scroll-reveal animation ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Selection ── */
+::selection {
+  background: var(--gold);
+  color: var(--charcoal);
+}
