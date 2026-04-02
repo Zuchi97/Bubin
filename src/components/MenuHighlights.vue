@@ -2,10 +2,10 @@
   <section class="menu-section" id="menu" ref="sectionRef">
     <!-- Header -->
     <div class="menu-header">
-      <p class="section-label reveal">精選菜色</p>
-      <h2 class="section-title reveal" style="--delay:0.1s">主廚推薦</h2>
+      <p class="section-label reveal">精選冰品</p>
+      <h2 class="section-title reveal" style="--delay:0.1s">店長推薦</h2>
       <p class="section-body reveal" style="--delay:0.2s">
-        以當季食材為靈感，每週更新的主廚精選，帶給您最新鮮的驚喜。
+        以當季食材為靈感，每季更新的店長精選，帶給您最新鮮的驚喜。
       </p>
     </div>
 
@@ -57,7 +57,7 @@ import { useScrollReveal } from '@/composables/useScrollReveal'
 const sectionRef = ref(null)
 useScrollReveal(sectionRef)
 
-const tabs = ['全部', '前菜', '主菜', '甜點', '調酒']
+const tabs = ['全部', '招牌冰品', '風味雪花', '精緻熟食', '調酒']
 const activeTab = ref('全部')
 
 // 切換 Tab 後，新渲染的卡片是全新 DOM 元素，
@@ -83,32 +83,32 @@ watch(activeTab, async () => {
 
 const items = [
   {
-    course: 'Antipasto', name: '生火腿拼盤', price: 'NT$520',
-    tags: '黑毛豬 · 帕爾馬 · 無花果蜂蜜',
-    desc: '嚴選義大利頂級生火腿，搭配當季無花果與陳年巴薩米克醋。',
-    img: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=700&q=80',
-    cat: '前菜'
+    course: '招牌冰品', name: '紅豆牛奶冰', price: 'NT$80',
+    tags: '紅豆煉乳 · 純雪機 · 無添加',
+    desc: '純雪機清冰為基底，淋上自製紅豆與煉乳。',
+    img: '/images/milkice.jpg',
+    cat: '招牌冰品'
   },
   {
-    course: 'Primo', name: '手工黑松露寬麵', price: 'NT$780',
-    tags: '黑松露 · 帕瑪森 · 奶油',
-    desc: '每日手工揉製的寬麵配上當季黑松露，奢華而簡約。',
-    img: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=700&q=80',
-    cat: '主菜'
+    course: '招牌冰品', name: '檸檬愛玉冰', price: 'NT$200',
+    tags: '手工愛玉 · 純雪機 · 檸檬原汁',
+    desc: '100%純手工愛玉，配上檸檬原汁。',
+    img: '/images/lemonice.jpg',
+    cat: '招牌冰品'
   },
   {
-    course: 'Secondo', name: '紅酒燉牛頰', price: 'NT$1,080',
-    tags: '慢燉8小時 · 松露馬鈴薯泥 · 炸酸豆',
-    desc: '以 Barolo 紅酒慢燉八小時，肉質入口即化，搭配松露馬鈴薯泥。',
-    img: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=700&q=80',
-    cat: '主菜'
+    course: '精緻熟食', name: '炸物拼盤', price: 'NT$120',
+    tags: '冷凍炸物 · 低油烘烤 · 氣炸鍋',
+    desc: '紅龍牌炸物，搭配現磨胡椒。',
+    img: '/images/rdsnglt.jpg',
+    cat: '精緻熟食'
   },
   {
-    course: 'Dolce', name: '原味提拉米蘇', price: 'NT$320',
-    tags: '馬斯卡彭 · 濃縮咖啡 · 薩芙瓦酒',
-    desc: '忠於傳統食譜，以馬斯卡彭起司與濃縮咖啡製成，不妥協的義式甜點。',
-    img: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=700&q=80',
-    cat: '甜點'
+    course: '雪花冰', name: '草莓牛奶雪花', price: 'NT$200',
+    tags: '鮮奶製成 · 國立冰磚 · 無添加',
+    desc: '新鮮當季草莓，搭配純鮮奶製成牛奶冰磚與煉乳。',
+    img: '/images/Smilk.png',
+    cat: '風味雪花'
   },
   {
     course: 'Cocktail', name: 'Negroni Sbagliato', price: 'NT$360',
@@ -118,11 +118,11 @@ const items = [
     cat: '調酒'
   },
   {
-    course: 'Antipasto', name: '炸朝鮮薊', price: 'NT$380',
-    tags: '羅馬式 · 檸檬鹽 · 煙燻美乃滋',
-    desc: '羅馬傳統做法，外酥內嫩，佐以自製煙燻美乃滋。',
-    img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=700&q=80',
-    cat: '前菜'
+    course: '雪花冰', name: '巧克力雪花', price: 'NT$90',
+    tags: '黑師傅 · 國立冰磚 · 無添加',
+    desc: '使用國立冰磚名下巧克力冰磚磨研製成。',
+    img: '/images/Chaco.png',
+    cat: '風味雪花'
   },
 ]
 

@@ -6,7 +6,7 @@
     <AboutSection />
     <MenuHighlights />
     <ReservationForm />
-    <GalleryGrid />
+    <!-- <GalleryGrid /> --> <!-- 先隱藏，等有內容再放上 -->
     <InfoBar />
     <SiteFooter />
 
