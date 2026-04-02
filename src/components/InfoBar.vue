@@ -27,9 +27,8 @@ const infoItems = [
       <polyline points="12,6 12,12 16,14"/>
     </svg>`,
     label: '營業時間',
-    value: `週二 — 週五 &nbsp;12:00–14:30 / 18:00–22:00<br/>
-            週六、日 &nbsp;11:30–15:00 / 18:00–22:30<br/>
-            <span style="color:var(--rust)">週一公休</span>`
+    value: `週一 — 週日 &nbsp;10:30–21:30<br/>
+            <span style="color:var(--rust)">公休日會另外公告</span>`
   },
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -37,7 +36,7 @@ const infoItems = [
       <circle cx="12" cy="10" r="3"/>
     </svg>`,
     label: '地址',
-    value: `台北市大安區<br/>仁愛路四段 101 號 2 樓<br/>
+    value: `嘉義縣 布袋鎮 海運街 106 號<br/>
             <a href="https://maps.google.com" target="_blank" rel="noopener"
                style="color:var(--gold);font-size:0.72rem;letter-spacing:0.12em;text-decoration:none">
                查看地圖 →
@@ -49,10 +48,10 @@ const infoItems = [
       <polyline points="22,6 12,13 2,6"/>
     </svg>`,
     label: '聯絡我們',
-    value: `<a href="tel:+886212345678" style="color:inherit;text-decoration:none">+886 2 1234 5678</a><br/>
-            <a href="mailto:info@varese.com.tw"
+    value: `<a href="tel:0965318306" style="color:inherit;text-decoration:none">0965-318-306</a><br/>
+            <a href="mailto:catlikecathy3@gmail.com"
                style="color:var(--gold);font-size:0.82rem;text-decoration:none">
-               info@varese.com.tw
+               catlikecathy3@gmail.com
             </a>`
   },
 ]

@@ -3,8 +3,8 @@
     <div class="footer-inner">
       <!-- Brand -->
       <div class="footer-brand">
-        <span class="footer-logo">Varese</span>
-        <p>Fine Italian Dining in the heart of Taipei.<br />每一餐都是一次義大利之旅。</p>
+        <span class="footer-logo">布冰雪花</span>
+        <p>Encountering shaved ice in Chiayi.<br />每一餐都是一次雪地旅行。</p>
         <div class="footer-social">
           <a v-for="s in socials" :key="s.name" :href="s.href" :aria-label="s.name" target="_blank" rel="noopener">
             <span v-html="s.icon"></span>
@@ -84,8 +84,8 @@ const columns = [
   {
     title: '菜單',
     links: [
-      { label: '午餐菜單', href: '#menu' },
-      { label: '晚餐菜單', href: '#menu' },
+      { label: '雪花冰', href: '#menu' },
+      { label: '招牌冰品', href: '#menu' },
       { label: '主廚推薦', href: '#menu' },
       { label: '酒單', href: '#menu' },
     ]
@@ -95,8 +95,7 @@ const columns = [
     links: [
       { label: '關於我們', href: '#about' },
       { label: '私人包廂', href: '#reserve' },
-      { label: '企業宴客', href: '#contact' },
-      { label: '禮品卡', href: '#' },
+      { label: '企業宴客', href: '#contact' }
     ]
   },
 ]

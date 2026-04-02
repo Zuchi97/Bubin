@@ -9,7 +9,7 @@
       <div class="divider reveal" style="--delay:0.2s"></div>
       <p class="section-body reveal" style="--delay:0.25s">
         透過線上表單輕鬆預約，或直接致電我們的服務團隊。
-        私人包廂與特殊場合請提前三天以上預約。
+        包場或特殊場合請提前三天以上預約。
       </p>
       <div class="res-contact reveal" style="--delay:0.35s">
         <a href="tel:+886212345678" class="contact-line">
